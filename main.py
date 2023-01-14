@@ -1,10 +1,9 @@
 from flask import Flask,jsonify
 import requests
-from flask_cors import CORS,cross_origin
-from flask.helpers import send_from_directory
+from flask_cors import CORS
 import json
 
-app = Flask(__name__,static_folder='frontend/dist/frontend',static_url_path='')
+app = Flask(__name__)
 CORS(app)
 
 
@@ -40,7 +39,9 @@ def userRepos(userid):
 
 @app.route('/')
 def serve():
-    return send_from_directory(app.static_folder,'index.html')
+    return jsonify({
+        "data":'data'
+    })
 
 if(__name__=='__main__'):
     app.run(debug=True)
