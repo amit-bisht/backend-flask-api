@@ -15,7 +15,7 @@ def userInfo(userid):
     }
     try:
         url="https://api.github.com/users/"+userid
-        responseAPI=requests.get(url,headers=headers)
+        responseAPI=requests.get(url)
         data=json.loads(responseAPI.text)
         responseAPI.raise_for_status()
         return jsonify(data),responseAPI.status_code
@@ -30,7 +30,7 @@ def userRepos(userid):
     }
     try:
         url="https://api.github.com/users/"+userid+"/repos?per_page=4"
-        responseAPI=requests.get(url,headers=headers)
+        responseAPI=requests.get(url)
         data=json.loads(responseAPI.text)
         responseAPI.raise_for_status()
         return jsonify(data),200
