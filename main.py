@@ -40,7 +40,8 @@ def userRepos(userid):
 @app.route('/')
 def serve():
     return jsonify({
-        "data":'data'
+        "API link for fetching user info":'https://backend-flask-api.vercel.app/api/user/<user-name>',
+        "API link for fetching user repos":'https://backend-flask-api.vercel.app/api/repos/<username>'
     })
 
 if(__name__=='__main__'):
