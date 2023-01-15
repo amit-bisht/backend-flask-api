@@ -28,12 +28,12 @@ python main.py
 * Unit tests per api
 
 
-#Using on live server
+# Using on live server
 
-###API
-*https://backend-flask-api.vercel.app/api/user/<user-name>
-*https://backend-flask-api.vercel.app/api/repos/<user-name>
+### API
+* https://backend-flask-api.vercel.app/api/user/<user-name>
+* https://backend-flask-api.vercel.app/api/repos/<user-name>
 
-###API Info
-*First api is for fetching user info
-*Second api is for fetching user repositories
+### API Info
+* First api is for fetching user info
+* Second api is for fetching user repositories
