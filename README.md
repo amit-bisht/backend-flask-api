@@ -31,9 +31,10 @@ python main.py
 # Using on live server
 
 ### API
-* https://backend-flask-api.vercel.app/api/user/<user-name>
-* https://backend-flask-api.vercel.app/api/repos/<user-name>
+* https://backend-flask-api.vercel.app/api/user/user-name
+* https://backend-flask-api.vercel.app/api/repos/user-name
 
 ### API Info
+* Replace user-name with github username
 * First api is for fetching user info
 * Second api is for fetching user repositories
