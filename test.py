@@ -2,8 +2,8 @@ from main import app
 import unittest
 import requests
 class FlaskTest(unittest.TestCase):
-    URL="http://127.0.0.1:5000/api/user/"
-    REPO_URL="http://127.0.0.1:5000/api/repos/"
+    URL="https://backend-flask-api.vercel.app/api/user/"
+    REPO_URL="https://backend-flask-api.vercel.app/api/repos/"
     def test_userinfo_success(self,name):
         self.URL+=name
         resp=requests.get(self.URL)
