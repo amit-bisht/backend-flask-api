@@ -29,7 +29,7 @@ def userRepos(userid):
         'Authorization':'Bearer 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'
     }
     try:
-        url="https://api.github.com/users/"+userid+"/repos?per_page=10"
+        url="https://api.github.com/users/"+userid+"/repos"
         responseAPI=requests.get(url)
         data=json.loads(responseAPI.text)
         responseAPI.raise_for_status()
